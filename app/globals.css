@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #009ec2;
+  --color-accent: #D62828;
+  --color-background-light: #f5f8f8;
+  --color-background-dark: #0f1f23;
+  --color-text-dark: #101718;
+  --color-text-muted: #5e848d;
+  --color-border: #dae4e7;
+  --color-footer-bg: #001a2c;
+  --color-whatsapp: #25D366;
+
+  --font-display: var(--font-inter), sans-serif;
+  --font-signature: var(--font-dancing-script), cursive;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-subtle {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@utility animate-on-scroll {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@utility whatsapp-float {
+  animation: fadeInUp 1s ease-out, pulse-subtle 2s infinite;
+}
+
+@utility hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+}
+
+body {
+  font-family: var(--font-display);
+  color: var(--color-text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
