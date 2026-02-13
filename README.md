@@ -1,6 +1,6 @@
 # Parasoles y Domos San Andrés - Sitio Web
 
-Sitio web corporativo para **Parasoles y Domos San Andrés**, negocio de fabricación, mantenimiento y diseño de carpas, parasoles y domos en Bucaramanga, Santander, Colombia.
+Plataforma corporativa de alto rendimiento para el sector industrial y arquitectonico. Desarrollada con Next.js 15 y Tailwind CSS v4, enfocada en conversion directa via WhatsApp, optimizacion SEO local para Bucaramanga y arquitectura de componentes reutilizables.
 
 ## Stack Tecnologico
 
